@@ -36,7 +36,7 @@ class PerguntaUsuario(BaseModel):
 # CÉREBRO DA YUNA (Extraído do seu projeto)
 # ==========================================
 # Substitua pela mesma chave que está no seu st.secrets do Streamlit
-CHAVE_API_GEMINI = "AIzaSyC4_OFi1QWFoL5q1urF2hqvVV0sca-XlIY"
+CHAVE_API_GEMINI = os.environ.get("GEMINI_API_KEY")
 
 # Inicializa o cliente do Gemini
 cliente_gemini = genai.Client(api_key=CHAVE_API_GEMINI)
