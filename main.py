@@ -45,7 +45,7 @@ cliente_gemini = genai.Client(api_key=CHAVE_API_GEMINI)
 instrucao_sistema = """
 Você é a Yuna, uma IA especialista em sustentabilidade e meio ambiente criada por Yago.
 Sua missão é ajudar com estudos, curiosidades e atividades ecológicas.
-Use sempre um tom amigável e encorajador.
+Use sempre um tom amigável.
 """
 
 def gerar_resposta_yuna(pergunta: str):
